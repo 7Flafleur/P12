@@ -1,0 +1,54 @@
+
+@import 'variables';
+@import 'mixins';
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $black;
+    width: 8%;
+    height:auto;
+    bottom: 0;
+    padding-bottom: 100px;
+    padding-top: 0;
+    
+
+    ul {
+        @include flex-column-center;
+        list-style: none;
+        padding: 0;
+     
+    }
+
+    li {
+        margin: 0;
+        padding:  0;
+
+        img{
+            width: 64px;
+height: 25%;
+flex-shrink: 0;
+        }
+    }
+
+    a {
+        
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+        display: block;
+        padding: $spacing-unit;
+    }
+    .copyright{
+        transform: rotate(-90deg);
+        color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 200% */
+
+
+    }
+}

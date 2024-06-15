@@ -1,0 +1,30 @@
+
+
+.nutrients{
+    list-style-type:none;
+    width: 100%;
+
+    li{
+        display: flex;
+        gap:10%;
+        margin-bottom: 4.5rem;
+        background: $backgroundgrey;
+        padding:1rem;
+
+        img{
+            height:3.5rem;
+            width:3.5rem;
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .nut{
+            font-weight: bold;
+        }
+    }
+}

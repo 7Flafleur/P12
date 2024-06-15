@@ -1,0 +1,78 @@
+@import "variables";
+
+
+.responsivescore{
+  margin-top: -15px;
+  position: relative;
+  width: 60%;
+  height:60%;
+}
+
+.score{
+    background-color:$backgroundgrey;
+    // border:red solid 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 0 1rem 0.5rem;;
+    color: #282d30;
+    text-align: center;
+   width:31%;
+    
+}
+
+.score-chart-title {
+    font-size: 16px;
+    color: #282d30;
+    margin-bottom: 10px;
+  }
+  
+  .score-chart .recharts-surface {
+    transform: rotate(-90deg);
+    
+  }
+
+  .score-percentage {
+    position: relative;
+    font-size: 14px;
+    color: #282d30;
+  bottom: 35%;
+    text-align: center;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  .objectif{
+    padding-top: 0.4rem;
+    width:5rem;
+  }
+
+  .percent{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .custom-tooltip {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .pie2{
+    z-index: -1;
+  }
+
+  .title{
+    position: absolute;
+    font-weight: bold;
+    left:5%;
+    top:12%;
+    z-index: 2;
+  }
+
+  .piechart{
+    position: relative;
+    top:25%;
+
+  }
