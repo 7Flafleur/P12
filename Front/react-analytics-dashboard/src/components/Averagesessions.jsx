@@ -94,7 +94,7 @@ export default function Averagesessions(props) {
 
     <div className="averagesessions">
       <ResponsiveContainer className="responsivecontainer" width="100%" height="100%">
-        <p className='durée'>Durée moyenne des séances</p>
+        <p className='durée'>Durée moyenne des sessions</p>
 
         <LineChart width="100%" height="100%"
           data={sessions}
@@ -102,7 +102,7 @@ export default function Averagesessions(props) {
           onMouseLeave={() => setActiveindex(7)}
         >
 
-          <XAxis dataKey="day" axisLine={false} stroke='#fff' opacity={0.7} tickLine={false} tickMargin={-20} padding={{ left: 10, right: 10 }} />
+          <XAxis dataKey="day" axisLine={false} stroke='#fff' opacity={0.1} tickLine={false} tickMargin={-20} padding={{ left: 10, right: 10 }} strokeDasharray="0 0" />
           <YAxis domain={[minVal - 20, maxVal + 20]} hide={true} />
           <Tooltip content={<CustomTooltip />} />
           <Line type="monotone" dataKey="sessionLength" stroke="#ffffff" dot={{ r: 0 }} activeDot={{ r: 3 }} />
