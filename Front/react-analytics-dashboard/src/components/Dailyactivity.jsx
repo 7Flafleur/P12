@@ -94,7 +94,7 @@ import {
                 top: 20, right: 30, left: 20, bottom: 0,
               }}bargap={10} barCategoryGap="30%"
             >
-              <CartesianGrid border ="solid blue 1px" strokeDasharray="1 3" padding={{bottom:50}} />
+              <CartesianGrid border ="solid blue 1px" strokeDasharray="1 3" padding={{bottom:50}} vertical={false} />
               <XAxis dataKey="day" axisLine={false} margin={20}  tickLine ={false} tickMargin={20} height={80} padding={{top:10}}/>
               <YAxis yAxisId="right" orientation="left" stroke="transparent"  />
               <YAxis yAxisId="kilogram" orientation="right" stroke="#ff0000" domain={[min,max]} axisLine={false} tickLine={false}  tickMargin={20} tickFormatter={formatTicks} ticks={[min, avg, max]} />
