@@ -87,8 +87,6 @@ export default function Averagesessions(props) {
   console.log("active index ", activeIndex)
 
 
-
-
   return (
 
 
@@ -102,21 +100,19 @@ export default function Averagesessions(props) {
           onMouseLeave={() => setActiveindex(7)}
         >
 
-          <XAxis dataKey="day" axisLine={false} stroke='#fff' opacity={0.1} tickLine={false} tickMargin={-20} padding={{ left: 10, right: 10 }} strokeDasharray="0 0" />
+          <XAxis dataKey="day" axisLine={false} stroke='#fff' opacity={0.7} tickLine={false} tickMargin={-20} padding={{ left: 10, right: 10 }} strokeDasharray="0 0" />
           <YAxis domain={[minVal - 20, maxVal + 20]} hide={true} />
           <Tooltip content={<CustomTooltip />} />
           <Line type="monotone" dataKey="sessionLength" stroke="#ffffff" dot={{ r: 0 }} activeDot={{ r: 3 }} />
-          <CartesianGrid stroke="#fff" opacity={0.5} horizontal={false} /> {/* Add this line */}
+          <CartesianGrid stroke="#fff" opacity={0.5} horizontal={false} vertical={false} /> 
 
           <ReferenceArea className='referencearea'
             x1={activeIndex}
             x2={6}
-            strokeOpacity={0.8}
+            strokeOpacity={0.3}
 
-
-
-
-            fill="#979797"
+            fill="#000"
+            opacity={0.5}
           />
 
         </LineChart>
