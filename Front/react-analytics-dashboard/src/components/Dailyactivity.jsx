@@ -31,7 +31,7 @@ import {
 
     
     const kilograms = data.map(item => item.kilogram);
-    const min = Math.min(...kilograms);
+    const min = Math.min(...kilograms)-1;
     const max = Math.max(...kilograms);
    
     const avg = (min+max)/2
