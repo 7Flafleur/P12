@@ -65,7 +65,7 @@ newperf = newperf.reverse()
 
 
 
- return ( <div className="performance" style={{ padding: 0 }}>
+ return ( <div className="performance" style={{ padding: 0,backgroundColor:"#000" }}>
       <ResponsiveContainer width="100%" height="100%" style={{padding:0,margin:0}}  >
         <RadarChart cx="50%" cy="50%" outerRadius="70%" data={newperf}>
           <PolarGrid radialLines={false} />
