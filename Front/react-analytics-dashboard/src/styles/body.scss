@@ -1,17 +1,31 @@
 @import "mixins.scss";
 @import "variables.scss";
 
+
+
 Body {
-  //  border: red dotted 2px;
+    // border: red dotted 2px;
   display: flex;
   flex-direction: column;
   height:100%;
+
+  
+
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  
+
+
 }
 
 .main {
   //  border: aqua solid 2px;
   display: flex;
   width: 100%;
+
  
 }
 

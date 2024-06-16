@@ -15,7 +15,7 @@ async function fetchData(url, customErrorMessage) {
     console.error(error.message);
     throw error;
   }
-};
+}
 
 
 function normalizeUserData(user) {
@@ -32,7 +32,7 @@ function normalizeUserData(user) {
       lipidCount: user.keyData.lipidCount,
     }:null
   };
-};
+}
 
 
 export async function getUser(userId) {

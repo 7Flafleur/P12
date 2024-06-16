@@ -94,10 +94,10 @@ export default function Main() {
                 </div>
             )}
                         {activity?( <Dailyactivity activity={activity} />): (
-      <div>❓ 🤔 ❓ Données non disponibles!</div>
+      <div className="emoji">❓ 🤔 ❓ Données non disponibles!</div>
     )}
 <div className="sessionsperfo">
-                           {averageSessions? ( <Averagesessions sessions={sessions}/>) :    (<div className="emoji"> ❓ 🤔 ❓ Données non disponibles! </div>
+                           {averageSessions? ( <Averagesessions sessions={sessions}/>) :    (<div className="emoji" id="emoijisessions"> ❓ 🤔 ❓ Données non disponibles! </div>
     ) }
                            {performance?  (<Performance performance={performanceprop} kinds={performanceprop.kind}/>) :    (<div className="emoji"> ❓ 🤔 ❓ Données non disponibles! </div>
     ) }

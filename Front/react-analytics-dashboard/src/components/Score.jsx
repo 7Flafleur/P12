@@ -40,6 +40,7 @@ export default function Score(props) {
             innerRadius="0"
             outerRadius="84%"
             fill="#FFFFFF"
+            dataKey={null}
             startAngle={90}
             endAngle={450}
           />
