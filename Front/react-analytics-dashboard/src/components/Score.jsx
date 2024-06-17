@@ -15,7 +15,7 @@ export default function Score(props) {
   return (
     <div className="score">
       <ResponsiveContainer className="responsivescore" width="100%" height="100%">
-      <span className='title'>Score</span>
+        <span className='title'>Score</span>
         <PieChart className='piechart'>
           <Pie
             data={data}

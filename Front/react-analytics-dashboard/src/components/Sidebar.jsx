@@ -4,12 +4,12 @@ import bike from '../styles/pics/bike.png';
 import dumbbell from '../styles/pics/dumbbell.png';
 
 
-export default function Sidebar(){
+export default function Sidebar() {
 
 
-    return(
+    return (
         <aside className="sidebar">
-                    <ul>
+            <ul>
                 <li><a href="/activity"><img src={yoga} alt="" /></a></li>
                 <li><a href="/swimming"><img src={swim} alt="" /></a></li>
                 <li><a href="/cycling"><img src={bike} alt="" /></a></li>
