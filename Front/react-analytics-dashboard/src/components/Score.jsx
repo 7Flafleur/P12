@@ -17,7 +17,7 @@ export default function Score(props) {
       <ResponsiveContainer className="responsivescore" width="100%" height="100%">
         <span className='title'>Score</span>
         <PieChart className='piechart'>
-          <Pie
+          <Pie className='outerpie'
             data={data}
             cx="50%"
             cy="50%"
@@ -33,14 +33,14 @@ export default function Score(props) {
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
-          <Pie className='pie2'
+          <Pie className='innerpie'
             data={[{ value: 1 }]}
             cx="50%"
             cy="50%"
             innerRadius="0"
             outerRadius="84%"
             fill="#FFFFFF"
-            dataKey={null}
+            dataKey="value"
             startAngle={90}
             endAngle={450}
           />

@@ -61,7 +61,7 @@ export async function getUserActivity(userId) {
   try {
     if (USE_MOCK_DATA) {
       const useractivity = USER_ACTIVITY.find(useractivity => useractivity.userId === Number(userId));
-      console.log("Mock activity", useractivity)
+      // console.log("Mock activity", useractivity)
       return useractivity.sessions;
     }
     const useractivity = await fetchData(`http://localhost:3000/user/${userId}/activity`, "error retrieving user activity")

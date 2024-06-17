@@ -48,7 +48,7 @@ export default function Averagesessions(props) {
   }
 
 
-  console.log("Session props:", props.sessions)
+  // console.log("Session props:", props.sessions)
 
   const sessions = props.sessions.map((item) => {
     let day;

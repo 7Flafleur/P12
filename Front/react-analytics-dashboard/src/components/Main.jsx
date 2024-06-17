@@ -28,7 +28,6 @@ export default function Main() {
 
         const fetchDataMain = () => {
 
-
             Promise.all([
                 getUser(id).catch(err => {
                     console.error(err);
@@ -86,7 +85,7 @@ export default function Main() {
                 <Sidebar />
                 <div className="dashboardcontent">
                     <section className="left">
-                        <div className="h1">Bonjour <span className="firstname">{user ? user.firstName : "Utilisateur inconnu :)"}</span></div>
+                        <div className="h1">Bonjour <span className="firstname">{user? user.firstName : "Utilisateur inconnu :)"}</span></div>
                         {user ? (<div className="congrats">Félicitations! Vous avez explosé vos objectifs hier👏</div>) : (<div className="blank"> Hm... 🤔</div>)}
                         {!user && (
                             <div className="error">
