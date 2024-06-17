@@ -14,7 +14,7 @@ const data = [
 
 export default function Performance(props) {
 
-  console.log(" Performance props ", props)
+  // console.log(" Performance props ", props)
 
   const perf = props.performance.data
 
@@ -49,7 +49,7 @@ export default function Performance(props) {
   });
 
 
-  console.log("NewPerf", newperf)
+  // console.log("NewPerf", newperf)
 
 
 

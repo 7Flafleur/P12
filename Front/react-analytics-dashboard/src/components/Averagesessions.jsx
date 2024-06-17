@@ -84,7 +84,7 @@ export default function Averagesessions(props) {
   const maxVal = Math.max(...sessions.map(item => item.sessionLength));
 
 
-  console.log("active index ", activeIndex)
+  // console.log("active index ", activeIndex)
 
 
   return (

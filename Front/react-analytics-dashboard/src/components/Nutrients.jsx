@@ -15,9 +15,9 @@ export default function Nutrients(props) {
     //     lipidCount: 50
     // }
 
-    console.log("Nutrient props:", props)
+    // console.log("Nutrient props:", props)
 
-    console.log("caloriecount:", props.nutrients.calorieCount)
+    // console.log("caloriecount:", props.nutrients.calorieCount)
 
 
     return (

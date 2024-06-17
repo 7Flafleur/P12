@@ -19,7 +19,7 @@ import Ovalcopy from '../styles/pics/OvalCopy.png'
 export default function Dailyactivity(props) {
 
 
-  console.log("Props activity", props.activity)
+  // console.log("Props activity", props.activity)
 
 
 
