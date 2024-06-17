@@ -5,6 +5,10 @@ import { USE_MOCK_DATA } from '../config';
 
 async function fetchData(url, customErrorMessage) {
   try {
+    // Simulate a fetch error
+    if (url.includes('error')) {
+      throw new Error('Simulated fetch error');
+    }
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(customErrorMessage);

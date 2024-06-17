@@ -92,13 +92,13 @@ export default function Main() {
                                 <div className="centralerror">Impossible de récupérer vos données : avez-vous saisi le bon identifiant?</div>
                             </div>
                         )}
-                        {activity ? (<Dailyactivity activity={activity} />) : (
+                        {activity && user ? (<Dailyactivity activity={activity} />) : (
                             <div className="emoji">❓ 🤔 ❓ Données non disponibles!</div>
                         )}
                         <div className="sessionsperfo">
-                            {averageSessions ? (<Averagesessions sessions={sessions} />) : (<div className="emoji" id="emoijisessions"> ❓ 🤔 ❓ Données non disponibles! </div>
+                            {averageSessions && user ? (<Averagesessions sessions={sessions} />) : (<div className="emoji" id="emoijisessions"> ❓ 🤔 ❓ Données non disponibles! </div>
                             )}
-                            {performance ? (<Performance performance={performanceprop} kinds={performanceprop.kind} />) : (<div className="emoji"> ❓ 🤔 ❓ Données non disponibles! </div>
+                            {performanceprop ? (<Performance performance={performanceprop} kinds={performanceprop.kind} />) : (<div className="emoji"> ❓ 🤔 ❓ Données non disponibles! </div>
                             )}
                             {score ? (<Score score={score} />) : (<div className="emoji"> ❓ 🤔 ❓ Données non disponibles! </div>
                             )}
